@@ -1,0 +1,1 @@
+if symbol in periodic_table:

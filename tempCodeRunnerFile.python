@@ -1,0 +1,16 @@
+prime_list = [1]
+prime_count = int(input('Enter the nth prime number you would like to reach.\n'))
+current_check = 2
+is_prime = True
+
+while len(prime_list) < prime_count:
+    for x in prime_list:
+        prime_check = current_check % x
+        if prime_check == 0:
+            is_prime = False
+    if is_prime == True:
+        prime_list.append(current_check)
+    is_prime = True
+    current_check = current_check + 1
+        
+print(prime_list)
